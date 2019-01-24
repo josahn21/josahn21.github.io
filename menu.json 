@@ -7,19 +7,7 @@
       "lettuce",
       "grilled onions",
       "hamburger patty",
-      "buns"
-      ]
-      },
-     {
-    "type":"cheeseburger",
-    "price":2.00,
-    "ingredients":[
-      "lettuce",
-      "pepperjack cheese",
-      "grilled onions",
-      "hamburger patty",
-      "buns"
-      ]
-      }
+      "buns"]
+    }
     ]
 }
