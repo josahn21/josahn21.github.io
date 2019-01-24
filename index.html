@@ -8,7 +8,7 @@
       xmlhttp.onreadystatechange= function(){
         if (this.readyState==4 && this.status== 200){
           var mydata=JSON.parse(this.responseText);//gets the json file and saves it as mydata
-      window.alert(mydata.burger[0].ingredients[1]);
+      window.alert(mydata.type[0]);
         }
       };
       xmlhttp.open("GET","menu.json",true);
