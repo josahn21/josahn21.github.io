@@ -1,0 +1,26 @@
+{
+  "burger" : [
+    {
+    "type":"hamburger",
+    "price":2.00,
+    "ingredients":[
+      "lettuce",
+      "hamburger patty",
+      "bacon",
+      "grilled onions",
+      "buns"
+      ]
+    },
+    {
+      "type":"cheeseburger",
+      "price":2.00,
+      "ingredients":[
+        "lettuce",
+        "pepperjack cheese",
+        "avocado",
+        "grilled onions",
+        "bacon",
+        "buns"]
+    }
+    ]
+}
