@@ -19,7 +19,7 @@
       var previous = null
       var current = null
       setInternal (function(){
-        $.getJSON("menu.json",fucntion(json) {
+        $.getJSON("menu.json",function(json) {
           current = JSON.stringify(json);
           if (previous && current && previous !==current) {
             location.reload();
