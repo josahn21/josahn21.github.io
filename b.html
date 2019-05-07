@@ -8,28 +8,25 @@
     <h1 id = "ax"></h1>
     <h1 id = "rx"></h1>
     <script>
-      var ax;
-      var axHigh = 0;
       var ay;
+      var ayHigh = 0;
       
-      var rx;
+      var ry;
       function setup() {
         createCanvas(window.innerWidth, window.innerHeight);
       }
       
       function draw() {
-        ax = accelerationX;
         ay = accelerationY;
-        if (ax < axHigh) {
-          axHigh = ax;
-        document.getElementById('ax').innerHTML = "X Accel = " + ax;
+        if (ay < ayHigh) {
+          ayHigh = ay;
+        document.getElementById('ay').innerHTML = "Y Accel = " + ay;
         }
-        rx = rotationX;
-        document.getElementById('rx').innerHTML= "X Rotaion = " +rx;
-      
+        ry = rotationY;
+        document.getElementById('ry').innerHTML= "Y Rotaion = " +ry;
         if (ay < 0) {
         document.getElementById('ay').innerHTML = "Y Accel = " + ay;
-        window.alert();
+        background:color('red')
         }
       }
       
