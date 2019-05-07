@@ -5,26 +5,36 @@
     </script>
   </head>
   <body>
+    <h1 id = "rz"></h1>
     <h1 id = "rx"></h1>
     <h1 id = "ry"></h1>
-    <h1 id = "rz"></h1>
     <script>
      
-     var rz = 0;
-     var rx = 0;
-     var ry = 0;
+     var rz;
+     var rx;
+     var ry;
+     //var defz;
+     var defx;
+     var defy;
       
       function setup() {
         createCanvas(window.innerWidth, window.innerHeight);
+        //defz = rotationZ;
+        defx = rotationX;
+        defy = rotationY;
       }
       
       function draw() {
         rz = rotationZ;
         rx = rotationX;
-        ry = rotationY;
-        document.getElementById('rx').innerHTML = "X = " + rx;
-        document.getElementById('ry').innerHTML = "Y = " + ry;
-        document.getElementById('rz').innerHTML = "Z = " + rz;
+        ry = roatationY;
+        
+        if (rx + 5 < defx) || (rx - 5 > defx) {
+          document.body.style.backgroundColor = "red";
+        }
+        document.gteElementById('rx').innerHTML = "X = " + rx;
+        document.gteElementById('ry').innerHTML = "Y = " + ry;
+        document.gteElementById('rz').innerHTML = "Z = " + rz;
       }
 
     </script>
