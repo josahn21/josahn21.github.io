@@ -5,35 +5,28 @@
     </script>
   </head>
   <body>
-    <h1 id = "ax"></h1>
+    <h1 id = "rz"></h1>
     <h1 id = "rx"></h1>
+    <h1 id = "ry"></h1>
     <script>
-      var ax;
-      var axHigh = 0;
-      var ay;
+     
+     var rz = 0;
+     var rx = 0;
+     var ry = 0;
       
-      var rx;
       function setup() {
         createCanvas(window.innerWidth, window.innerHeight);
       }
       
       function draw() {
-        ax = accelerationX;
-        ay = accelerationY;
-        if (ax < axHigh) {
-          axHigh = ax;
-        document.getElementById('ax').innerHTML = "X Accel = " + ax;
-        }
+        rz = rotationZ;
         rx = rotationX;
-        document.getElementById('rx').innerHTML= "X Rotaion = " +rx;
-      
-        if (ay < 0) {
-        document.getElementById('ay').innerHTML = "Y Accel = " + ay;
-        
-        }
+        ry = roatationY;
+        document.gteElementById('rz').innerHTML = "Z = " + rz;
+        document.gteElementById('rx').innerHTML = "X = " + rx;
+        document.gteElementById('ry').innerHTML = "Y = " + ry;
       }
-      
-      
+
     </script>
   </body>
 </html>
