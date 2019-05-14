@@ -38,13 +38,13 @@
       var platform = new platform();
       var hit = false;
       var hitOne = false;
-      var narutogif = new narutogif();
+      var narutoimg = new narutoimg();
       var fireballimg = new fireballimg();
       var finalvalleyimg = new finalvalleyimg();
       var button;
       
       function preload() {
-        narutogif = loadImage('naruto.gif');
+        narutoimg = loadImage('naruto.gif');
         fireballimg = loadImage('fireeball.jpg');
         finalvalleyimg = loadImage('finalvalley.jpg');
         
@@ -52,7 +52,7 @@
       
       function setup() {
         createCanvas(w,h);
-        narutogif.loadPixels();
+        narutoimg.loadPixels();
         fireballimg.loadPixels();
         finalvalleyimg.loadPixels();
       }
