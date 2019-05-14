@@ -6,7 +6,7 @@ function jumper() {
         this.velocity = 0;//speed of the gravity
         
         this.show = function() {
-         image(narutoimg, this.x, this.y, 50, 50);
+         gif(narutogif, this.x, this.y, 50, 50);
         }
         this.up = function() {
           this.velocity += this.lift;
